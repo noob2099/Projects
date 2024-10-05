@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple-Style Bar Graph</title>
+    <link rel="stylesheet" href="style_stats.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bar Graph Generator</h1>
+        <div class="input-section">
+            <div class="input-group">
+                <label for="x-input">X Value:</label>
+                <input type="number" id="x-input" placeholder="Enter X value">
+            </div>
+            <div class="input-group">
+                <label for="y-input">Y Value:</label>
+                <input type="number" id="y-input" placeholder="Enter Y value">
+            </div>
+        </div>
+        <div class="graph-section">
+            <h2>Bar Graph</h2>
+            <div class="graph-container">
+                <div class="bar-container">
+                    <div class="bar" id="x-bar"></div>
+                    <span class="bar-label">X</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" id="y-bar"></div>
+                    <span class="bar-label">Y</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
