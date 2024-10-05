@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
     <div class="login-container">
         <h1>Sign In</h1>
         <form>
             <input type="email" placeholder="Email" required>
             <div class="password-container">
                 <input type="password" id="password" placeholder="Password" required>
+                <i class="fas fa-eye-slash toggle-password" id="togglePassword"></i>
+            </div>
             <div class="remember-me">
                 <input type="checkbox" id="rememberMe">
                 <label for="rememberMe">Remember me</label>
@@ -21,8 +29,10 @@
         </form>
         <div class="forgot-password">
             <a href="#">Forgot password?</a>
+        <div class="forgot-Username">
+            <a href="#">Forgot Email?</a>
         </div>
     </div>
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>
